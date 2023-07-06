@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Coffee Management</title>
+</head>
+<body>
+    <h1>Coffee Management</h1>
+
+    <h2>Create Coffee</h2>
+    <form id="create-form">
+        <input type="text" id="create-title" placeholder="Title">
+        <input type="number" id="create-beanVarietyId" placeholder="Bean Variety Id">
+        <input type="text" id="create-beanVarietyName" placeholder="Bean Variety Name">
+        <input type="text" id="create-region" placeholder="Region" />
+        <input type="text" id="create-notes" placeholder="Notes" />
+        <button type="submit">Create</button>
+    </form>
+
+    <h2>Update Coffee</h2>
+    <form id="update-form">
+        <input type="number" id="update-id" placeholder="Id">
+        <input type="text" id="update-title" placeholder="Title">
+        <input type="text" id="update-beanVarietyName" placeholder="Bean Variety Name">
+        <input type="number" id="update-beanVarietyId" placeholder="Bean Variety Id">
+        <input type="text" id="update-region" placeholder="Region">
+        <input type="text" id="update-notes" placeholder="Notes">
+        <button type="submit">Update</button>
+    </form>
+
+    <h2>Delete Coffee</h2>
+    <form id="delete-form">
+        <input type="number" id="delete-id" placeholder="Id">
+        <button type="submit">Delete</button>
+    </form>
+
+    <h2>All Coffees</h2>
+    <button id="get-all">Refresh</button>
+    <div id="coffee-list"></div>
+
+    <script src="coffee.js"></script>
+</body>
+</html>
