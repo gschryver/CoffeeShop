@@ -90,7 +90,7 @@ async function getAllCoffees() {
     coffees.forEach(coffee => {
         const coffeeItem = document.createElement('div');
         coffeeItem.textContent = `Id: ${ coffee.id }, Title: ${ coffee.title }, Bean Variety Id: ${ coffee.beanVarietyId } `;
-        coffeeList.appendChild(coffeeItem);
+        coffeeList.appendChild(coffeeItem); // Add the item to the DOM (ul element)
     });
 }
 
